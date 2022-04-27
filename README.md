@@ -30,7 +30,7 @@ cp .env.example .env
 `.env`:
 
 ```md
-LT_HOSTNAME=unique-string.loca.lt
+HOSTNAME=unique-string.loca.lt
 ```
 
 ### Run

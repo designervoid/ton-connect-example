@@ -7,13 +7,12 @@ import {config} from 'dotenv';
 
 config();
 
-// use generateServerSecret();
 const staticSecret = generateServerSecret();
 const port = 8080;
 
 function init() {
   const host = 'localhost';
-  const hostname = process.env.LT_HOSTNAME;
+  const hostname = process.env.HOSTNAME;
   const app = express();
   
   app.use(cors());
