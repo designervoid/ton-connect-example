@@ -26,8 +26,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@tonapps/tonlogin-server@../tonlogin-server":
+"@tonapps/tonlogin-server@^0.1.0":
   version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@tonapps/tonlogin-server/-/tonlogin-server-0.1.0.tgz#69b2d60d1ac52e98b7e70cc3bc63dd8e285a4f84"
+  integrity sha512-KdocWUBqNwZllZuw03+b3l9AEBY6zNOoVb6bQaxqwxbdgL2Jf5iK2RCyQqDl8Aiz6DgYrDutep4bS09bIWRrKA==
   dependencies:
     create-hmac "^1.1.7"
     tweetnacl "^1.0.3"
@@ -464,6 +466,11 @@ dot-prop@^5.2.0:
   integrity sha512-QM8q3zDe58hqUqjraQOmzZ1LIH9SWQJTlEKCH4kJ2oQvLZk7RbQXvtDM2XEq3fwkV9CCvvH4LA0AV+ogFsBM2Q==
   dependencies:
     is-obj "^2.0.0"
+
+dotenv@^16.0.0:
+  version "16.0.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.0.tgz#c619001253be89ebb638d027b609c75c26e47411"
+  integrity sha512-qD9WU0MPM4SWLPJy/r2Be+2WgQj8plChsyrCNQzW/0WjvcJQiKQJ9mH3ZgB3fxbUUxgc/11ZJ0Fi5KiimWGz2Q==
 
 duplexer3@^0.1.4:
   version "0.1.4"

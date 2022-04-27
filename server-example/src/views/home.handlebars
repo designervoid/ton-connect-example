@@ -25,6 +25,7 @@
         const authRequestUrl = '{{requestEndpoint}}';
         const loginLink = 'https://app.tonkeeper.com/ton-login/' + authRequestUrl;
 
+        console.log(loginLink);
         document.getElementById('link').href = loginLink;;
         new QRCode(document.getElementById('qrcode'), loginLink);
       }

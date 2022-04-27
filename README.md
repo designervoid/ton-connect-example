@@ -8,15 +8,40 @@ This library contains necessary functionality to implement TON Connect on the cl
 
 ## How to run the demo
 
+### Install localtunnel
+
+```md
+npx localtunnel --port 8080
 ```
+
+### Put domain name into .env
+
+```md
+your url is: https://unique-string.loca.lt
+```
+
+Take only `unique-string.loca.lt` and put it `.env`:
+
+```md
 cd server-example
+cp .env.example .env
+```
+
+`.env`:
+
+```md
+LT_HOSTNAME=unique-string.loca.lt
+```
+
+### Run
+
+Install packages and start:
+
+```md
 yarn install
 yarn start
 ```
-## Install TonLoginServer
-```
-yarn add @tonapps/tonlogin-server
-```
+
 ## How to use the server API
 
 ```js

@@ -2,16 +2,18 @@ import { engine } from 'express-handlebars';
 import express from 'express';
 import path from 'path';
 import cors from 'cors';
-import { TonLoginServer } from '@tonapps/tonlogin-server';
-import { getLocalIPAddress } from './utils';
+import { TonLoginServer, generateServerSecret } from '@tonapps/tonlogin-server';
+import {config} from 'dotenv';
+
+config();
 
 // use generateServerSecret();
-const staticSecret = 'C0n0Tm4x4ACU9f0mQNEs0LPYMXIpwkKaRQYQsrc9Hx8=';
+const staticSecret = generateServerSecret();
 const port = 8080;
 
 function init() {
-  const host = getLocalIPAddress();
-  const hostname = `${host}:${port}`;
+  const host = 'localhost';
+  const hostname = process.env.LT_HOSTNAME;
   const app = express();
   
   app.use(cors());
@@ -56,7 +58,7 @@ function init() {
   });
 
   app.listen(port, host, () => {
-    console.log(`Server running at http://${hostname}/`);
+    console.log(`Server running at ${hostname}`);
   });
 }
 
