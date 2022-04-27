@@ -24,7 +24,7 @@ function init() {
 
   app.get('/authRequest', (req, res) => {
     const request = tonlogin.generateAuthRequest({
-      image_url: 'https://ddejfvww7sqtk.cloudfront.net/images/landing/ton-nft-tegro-dog/avatar/image_d0315e1461.jpg',
+      image_url: 'https://cloudflare-ipfs.com/ipfs/bafkreie6n7iw32xpanm3mpbvnevpeji264ttsblanof6qgg2u6mw5bhoce',
       return_url: `${hostname}/tonlogin`,
       items: [{
         type: 'ton-address',
